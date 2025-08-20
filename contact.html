@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/style.css"> 
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.heading{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+  }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #000;
+  border: 1px solid green;
+  color: green;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+<div class="header2">
+  <a href="#" class="logo"><img src="plantlogo.jpg" height="50px" width="auto"> </a>
+
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="contact.html">Contact</a>
+
+  </nav>
+  <form action="" class="search-bar-container">
+      <input type="text" name="" id="find" placeholder="search here.." onkeyup="search()" class="searchhere"> 
+  </form>
+  <div class="icons">
+      <a href="cart.php" class="fas fa-shopping-cart"></a>
+       <a href="login.html" class="fas fa-user-circle" ></a>
+  </div>
+</div>
+<div class="container">
+  <form action="contact.php" method="post">
+    <label for="name"> Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <!--<label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">-->
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
+
+    </select>
+
+    <label for="message">Subject</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+    <!--<button type="submit">Submit</button>--> 
+    <input type="submit" value="Submit">
+
+    <div class="call">
+        <span>Call Us:</span>
+        <a href="#">+123-456-789</a>
+    </div>
+    <p>Our Address:14822 Rocky Blue Acres Ln SE,Yelm,WA 98597,Mumbai 400001</p>
+  </form>
+</div>
+
+</body>
+</html>

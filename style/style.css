@@ -1,0 +1,231 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/**header part **/
+.banner {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;   
+}
+.banner1 {  
+    text-align: center;
+    padding: 10px ;
+   
+}
+.banner1 .class1{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-card {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: auto;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px; 
+}
+.border:hover{
+    transform: scale(1.1);
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    
+}
+
+footer {
+    background: var(--green);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Add this CSS to your existing stylesheet */
+
+.products .box-container .box .discount{
+    position: absolute;
+    /*font-size: 1.1rem;*/
+    color: var(green);
+    background: rgba(51, 255, 95, 0.05);
+    z-index: 1;
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.products .box-container .box .image img{
+    width: 200px;
+    height: 220px;
+    align-items: center;
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: 0;left: 0;right: 0;
+    display: flex;
+    color: rgb(90, 0, 15);
+    background-color: #ffffff;
+
+}
+
+.products .box-container .box .image .icons a{
+    line-height: 2rem;
+    width: 30%;
+    background:rgb(75, 74, 74);
+    color: #cecaca;
+}
+.products .box-container .box .image .icons .cart-btn{
+    border-left:.1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width:100%;
+}
+.products .box-container .box .image .icons a:hover{
+    background: #7a847e;
+}
+.products .box-container .box .content{
+    text-align: center;
+}
+.products .box-container .box .content .price{
+    font-size: 1rem;
+    color:black;
+   
+   
+}
+.products .box-container .box .content .price span{
+    font-size: 0.5rem;
+    color:#999;
+   
+}
+
+:root{
+    --green:#3A9943;
+
+}
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--green);
+    color: #fff;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+}
+.header1,
+.header2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: var(--green);
+
+} 
+.header1{
+    border-bottom: 1rem solid rgba(255,255,255,2);
+}
+.header2{
+    padding: 10px; 
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+    
+}
+.header1 span{
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header1 a{
+    padding: 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header1 a:hover{
+    color: black;
+}
+.header2 .logo i{
+    color: black;
+}
+.header1 .call a{
+    padding:10px;
+}
+.header2 .search-bar-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    background: rgba(255,255,255,2);
+    border-radius: .5rem;
+
+}
+.header2 .search-bar-container #search-bar{
+   
+    width: 100%;
+    text-transform: none;
+    background: none;
+    color: black;
+    font-size: 1rem;
+}
+.header2 .search-bar-container #search-bar::placeholder{
+   text-transform: capitalize;
+   color:black;
+    
+}
+.header2 .search-bar-container button{
+   color:rgb(255, 255, 255);
+   cursor: pointer;
+   font-size: 1rem;
+   padding: 0 .5rem;
+    
+}
+.header2 .search-bar-container button:hover{
+    color: rgb(1, 75, 42);  
+ }
+
+ .header2 .navbar a{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-right: 2rem;
+ }
+
+ .header2 .icons a{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+ }
+ .header2 a:hover{
+    color: #000000;
+ }
+ .header2 .search-bar-container .fa-search{
+    color: black;
+ }
+
+ .header2 .icons .fa-heart:hover{
+    color: #bd0000;
+ }

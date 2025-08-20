@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../style/style1.css">
+   <title>Basil Plant</title>
+</head>
+
+<body>
+   <main>
+    <header>
+        <div class="header2">
+            <a href="#" class="logo"><img src="../plantlogo.jpg" height="50px" width="auto"> </a>
+
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="../aboutus.html">About</a>
+                <a href="../contact.html">Contact</a>
+
+            </nav>
+            <form action="" class="search-bar-container">
+                <input type="text" name="" id="find" placeholder="search here.." onkeyup="search()" class="searchhere"> 
+            </form>
+            <div class="icons">
+                <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop" >
+                    <i class="fas fa-shopping-cart total-count"></i>
+                </button>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="login.html" class="fas fa-user-circle" ></a>
+            </div>
+        </div>
+      <section>
+         <div class="container">
+
+            <div class="slide">
+                <div class="item" style="background-image: url(Ashwagandha\ .jpg); width: 30%;height: 350px;">  
+                </div>
+                <div class="item" style="background-image: url(ash1.jpg);width: 30%;height: 350px;">
+                   
+                </div>
+                <div class="item" style="background-image: url(ash2.jpg);width: 30%;height: 350px;">  
+                </div>
+                
+           
+                <div class="button">
+                <button class="prev"><i class="fas fa-arrow-left"></i></button>
+                <button class="next"><i class="fas fa-arrow-right"></i></button>
+                
+               </div>   
+            </div>
+            <div class="content">
+               <h1>Fenugreek plant</h1>
+               <div class="content-in">
+                   <h4><b>₹ 350</h4></b><span>(3.5)<i class="fa fa-star"></i></span>
+                </div>
+           </div>
+            <div class="page-header">
+                     <div class="featured-content-list">
+                        <button type="button" data-name="Fenugreek-plant" data-price="350" class="default-btn border-radius-5" > Add to cart</button>
+                        <br>
+                    </div>
+                    <h2><b>Benefits of Fenugreek</b></h2> 
+                    <div class="benefit-item">
+                        <h5>  Potential use of basil leaves for cancer </h5>
+                        <h5>Rich in Nutrients</h5> 
+                   </div> 
+                 </div>
+               </div>
+         </div>
+         </div>
+         
+      </div>
+   </div>
+   <p id="not_found"></p>
+   </section>
+   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+   <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>-->
+   <script src="../js/script.js"></script>
+</body>
+</html>

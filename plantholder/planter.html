@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PLANTER</title>
+</head>
+<body>
+    <header> 
+        
+        <div class="header2">
+            <a href="#" class="logo"><img src="../plantlogo.jpg" height="50px" width="auto"> </a>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="../aboutus.html">About</a>
+                <a href="../contact.html">Contact</a>
+
+            </nav>
+            <form class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here.." class="searchhere" onclick="search()">
+                <button type="submit" class="fas fa-search"><script src="../demo.js"></script></button>
+                
+            </form>
+            <div class="icons">
+                <a href="../addtocart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-user-circle"></a>
+            </div>
+        </div>
+        
+    </header> 
+    <main> 
+ 
+        <section class="products">           
+            <div id="holder1" onclick="plasticplanters()">
+                <div class="product-card border" > 
+                    <a href="plasticplanters.php"><img src="plastic1.jpg" alt="holder1"> </a>
+                    <h3>PLASTIC PLANTER</h3>
+                </div>
+             </div>
+             <div id="stand" onclick="concrete()">
+                <div class="product-card border" > 
+                    <a href="concrete.php"><img src="Concrete1.jpg" alt="stand"> </a>   
+                   <h3>CONCRETE PLANTER</h3>
+               </div>
+            </div>
+            <div id="stand" onclick="Woodenplanters()">
+                <div class="product-card border" > 
+                    <a href="Woodenplanters.php"><img src="wood1.jpg" alt="stand">  </a>  
+                   <h3>WOODEN PLANTERS</h3>
+               </div>
+            </div>
+            <div id="stand" onclick="Metalplanters()">
+                <div class="product-card border" > 
+                    <a href="Metalplanters.php"><img src="Metal1.jpg" alt="stand"></a> 
+                   <h3>METAL PLANTERS</h3>
+               </div>
+            </div>
+            <div id="stand" onclick="Hangingplanters()">
+                <div class="product-card border" > 
+                    <a href="Hangingplanters.php"><img src="Hanging planters.jpg" alt="stand"> </a>   
+                   <h3>HANGING PLANTERS</h3>
+               </div>
+            </div>
+            <div id="stand" onclick="selfwateringplant()">
+                <div class="product-card border" > 
+                    <a href="selfwateringplant.php"><img src="Self-Watering Planter.jpg" alt="stand"></a>    
+                   <h3>SELF WATERING<br> PLANTER</h3>
+               </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer> 
+        <p>Nursery E-commerce. All rights reserved.</p> 
+    </footer>
+    <script src="../js/drop.js"></script>
+</body>
+</html>
